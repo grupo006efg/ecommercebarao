@@ -1,0 +1,13 @@
+body {
+    font-family:Arial,Helvetica,sans-sertif;
+    margin:0;
+    padding:0;
+    background-color: aliceblue;
+}
+
+nav {
+    background-color: black;
+    color: whitesmoke;
+    padding: 10px;
+    text-align: center;
+}
