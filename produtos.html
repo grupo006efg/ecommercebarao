@@ -1,1 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>produtos</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <!-- Barra de Navegação -->
+  <nav>
+    <ul>
+        <li><a href="index.html">Página Inicial</a></li>
+        <li><a href="produtos.html">produtos</a></li>
+        <li>
+            <a href="carrinho.html">carrinho</a>
+            <span id="qtdecarrinho">0</span>
+        </li>
+    </ul>
+ </nav>
 
+ <!--Barra de pesquisa-->
+    <div class="barra-pesquisa">
+        <input type="text" id="barraPesquisa"
+        placeholder="Pesquisa produtos"
+        oninput="filtraProdutos()">
+    </div>
+
+    <!--Galeria Produtos -->
+    <div class="container" id="produtosContainer">
+      <div class="produto" data-nome="produto 4">
+        <img src="https://via.placeholder.com/250"
+        alt="produto 4">
+        <h2>Produto 4</h2>
+        <p>Preço: R$50,00</p>
+        <p id="estoque-produto-1">Estoque: 5</p>
+        <button id="bth-produto-1"
+        onclick="adicionarAoCarrinho('Produto 1',50, 3)">
+    Comprar</button>
+</div>
+<div>
+<div class="container" id="produtosContainer">
+    <div class="produto" data-nome="produto 1">
+      <img src="https://via.placeholder.com/250"
+      alt="produto 4">
+      <h2>Produto 4</h2>
+      <p>Preço: R$25,00</p>
+      <p id="estoque-produto-4">Estoque: 15</p>
+      <button id="bth-produto-4"
+      onclick="adicionarAoCarrinho('Produto 4',50, 4)">
+  Comprar</button>
+</div>
+
+</body>
+</html>
