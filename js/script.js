@@ -46,3 +46,4 @@ function atualizarEstoque(produtoId) {
         botaoElemento.textContent = "Esgotado";
     }
 }
+
