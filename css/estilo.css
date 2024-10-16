@@ -1,13 +1,13 @@
 body {
-    font-family:Arial,Helvetica,sans-sertif;
-    margin:0;
-    padding:0;
-    background-color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
 }
 
 nav {
-    background-color: black;
-    color: whitesmoke;
+    background-color: #333;
+    color: white;
     padding: 10px;
     text-align: center;
 }
@@ -15,27 +15,30 @@ nav {
 nav ul {
     list-style-type: none;
     margin: 0;
-    padding: 0%;
+    padding: 0;
 }
 
 nav ul li {
     display: inline;
     margin: 0 15px;
 }
+
 nav ul li a {
-    color: aliceblue;
+    color: white;
     text-decoration: none;
 }
-nav ul li a:hover{
+
+nav ul li a:hover {
     text-decoration: underline;
 }
 
-.conteudo  {
-    background-color: #5caf4c;
-    color: aliceblue;
+.conteudo {
+    background-color: #4CAF50;
+    color: white;
     text-align: center;
     padding: 100px 20px;
 }
+
 .conteudo h1 {
     margin: 0;
     font-size: 48px;
@@ -47,14 +50,115 @@ nav ul li a:hover{
 
 .conteudo .btn {
     background-color: white;
-    color: #5eaf4c;
+    color: #4CAF50;
     padding: 10px 20px;
     text-decoration: none;
     font-size: 18px;
-    border: 5px;
+    border-radius: 5px;
     margin-top: 20px;
 }
 
-.conteudo .btn:hover{
-    background-color: aliceblue;
+.conteudo .btn:hover {
+    background-color: #f1f1f1;
+}
+
+/* Produtos */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.produto img {
+    max-width: 100%;
+    height: auto;
+}
+
+.produto h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.produto p {
+    color: #555;
+}
+
+.produto button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+.produto button:hover {
+    background-color: #218838;
+}
+
+/* Carrinho */
+#carrinho {
+    background-color: #ccc;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#carrinho h1 {
+    margin-bottom: 15px;
+}
+
+#carrinho ul {
+    list-style: none;
+    padding: 0;
+}
+
+#carrinho ul li {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#carrinho ul li button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#carrinho ul li button:hover {
+    background-color: #52141a;
+}
+
+#total {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+button {
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Barra de Pesquisa */
+.barra-pesquisa {
+    text-align: center;
+    margin: 20px;
+}
+
+.barra-pesquisa input {
+    padding: 10px;
+    width: 300px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
